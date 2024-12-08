@@ -61,7 +61,7 @@ pkl_count = "count_vectorizer.pkl"
 with open(pkl_count, 'wb') as file:
     pickle.dump(count, file)
 
-df2 = pd.read_csv('san_pham.csv')
+df2 = pd.read_csv('San_pham.csv')
 data['label'] = data['so_sao'].apply(lambda x: 'positive' if x >= 3 else 'negative')
 
 def analyze_product_reviews(product_code):
